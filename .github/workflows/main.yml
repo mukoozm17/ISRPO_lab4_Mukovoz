@@ -14,9 +14,25 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   
-  test:
+  test_Ubuntu:
 
     runs-on: ubuntu-latest 
+    
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.7'
+      
+      - name: Run unittest
+        run: python -m unittest discover -s . -p "test_*.py"
+
+  test_Windows:
+
+    runs-on: windows-latest 
     
     steps:
       - name: checkout repository
