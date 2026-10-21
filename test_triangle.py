@@ -1,7 +1,7 @@
 import unittest
 from triangle import *
 
-class TestRectangle(unittest.TestCase):
+class TestTriangle(unittest.TestCase):
     def test_Area_positive(self):
         res = Area(3, 4)
 

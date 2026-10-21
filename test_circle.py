@@ -2,7 +2,7 @@ import unittest
 import math
 from circle import *
 
-class TestRectangle(unittest.TestCase):
+class TestCircle(unittest.TestCase):
     def test_Area_positive(self):
         res = Area(3)
 

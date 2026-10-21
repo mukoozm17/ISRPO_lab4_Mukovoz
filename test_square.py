@@ -1,7 +1,7 @@
 import unittest
 from square import *
 
-class TestRectangle(unittest.TestCase):
+class TestSquare(unittest.TestCase):
     def test_Area_positive(self):
         res = Area(3)
 
